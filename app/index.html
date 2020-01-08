@@ -9,16 +9,32 @@
 </head>
 <body>
     <div class="fullbg">
+        <button id="changebg">Surprise Me!</button>
+        <button id="quit">Close</button>
         <div class="staticInfoContainer">
             <h1>BackSlash Linux <span>Sven</span></h1>
             <h3>Version 5.1.0</h3>
             <button id="moveUp">Show Detailed System Information</button>
         </div>
+        <div class="detailedViewContainer">
+            <p class="static"><strong>Desktop: </strong>BackSlash Shell v3.0 on KDE Plasma</p>
+            <p class="gData"><strong>Graphics: </strong><span id="graphicsData"></span></p>
+            <p id="ramInformation"></p>
+            <p id="ramLoadValue"></p>
+            <div class="meter">
+                <span id="ram" style="width: 0%"></span>
+            </div>
+            <p id="cpuInformation"></p>
+            <p id="cpuLoadValue"></p>
+            <div id="cpuLoadContainer"></div>
+        </div>
         <div class="copyrightContainer">
-            <p>&copy; 2016-2019, BackSlash Linux. Distributed as Free and Open Source Software</p>
+            <p>&copy; 2016-2019, BackSlash Linux. Distributed as Free and Open Source Software.</p>
         </div>
     </div>
     <script>window.$ = window.jQuery = require('jquery');</script>
     <script src="lib/basic_functions.js"></script>
+    <script src="lib/systemInfoModule.js"></script>
+    <script src="../node_modules/canvasjs/dist/canvasjs.3.js"></script>
 </body>
 </html>
