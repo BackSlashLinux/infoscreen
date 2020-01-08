@@ -1,0 +1,30 @@
+{
+  "name": "infoscreen",
+  "version": "1.0.0",
+  "description": "Info Center for BackSlash Linux",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BackSlash-Linux/infoscreen.git"
+  },
+  "keywords": [
+    "BackSlash",
+    "Linux",
+    "Info",
+    "Center",
+    "InfoScreen",
+    "System",
+    "kinfocenter",
+    "About",
+    "information"
+  ],
+  "author": "BackSlash Linux",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/BackSlash-Linux/infoscreen/issues"
+  },
+  "homepage": "https://github.com/BackSlash-Linux/infoscreen#readme"
+}
