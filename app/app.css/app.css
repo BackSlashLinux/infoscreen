@@ -92,6 +92,7 @@ body {
     font-weight: 300;
     margin-top: 5px;
     font-size: 16px;
+    margin-bottom: 5px;
 }
 .copyrightContainer p {
     font-weight: 300;
@@ -102,11 +103,12 @@ body {
     width: 100%;
 }
 #moveUp {
-    background-color: #292929;
+    background-color: transparent;
+    text-decoration: underline;
     color: white;
     font-weight: 300;
     font-size: 12px;
-    padding: 5px 10px;
+    padding: 5px 0px;
     border: none;
     border-radius: 20px;
     -webkit-app-region: no-drag;
@@ -116,7 +118,7 @@ body {
     position: absolute;
     width: 100%;
     text-align: right;
-    top: 50px;
+    top: 70px;
     right: 50px;
     transition-duration: 500ms;
 }
