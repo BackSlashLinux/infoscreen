@@ -1,7 +1,65 @@
+/* Font Imports */
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./../fonts/Lato-Thin.ttf');
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('./../fonts/Lato-ThinItalic.ttf');
+    font-weight: 100;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('./../fonts/Lato-Light.ttf');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('./../fonts/Lato-LightItalic.ttf');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('./../fonts/Lato-Regular.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('./../fonts/Lato-Italic.ttf');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('./../fonts/Lato-Bold.ttf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('./../fonts/Lato-BoldItalic.ttf');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('./../fonts/Lato-Black.ttf');
+    font-weight: 900;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('./../fonts/Lato-Black.ttf');
+    font-weight: 900;
+    font-style: italic;
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Lato';
     color: white;
 }
 .fullbg {
@@ -19,11 +77,46 @@ body {
     text-align: right;
     top: 50%;
     transform: translateY(-50%);
-    right: 100px;
+    right: 50px;
+    transition-duration: 500ms;
 }
 .staticInfoContainer h1 {
     font-weight: 300;
+    margin-bottom: 0px;
+    font-size: 36px;
 }
 .staticInfoContainer h1 > span {
     font-weight: 100;
+}
+.staticInfoContainer h3 {
+    font-weight: 300;
+    margin-top: 5px;
+    font-size: 16px;
+}
+.copyrightContainer p {
+    font-weight: 300;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+}
+#moveUp {
+    background-color: #292929;
+    color: white;
+    font-weight: 300;
+    font-size: 12px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    -webkit-app-region: no-drag;
+    outline: none;
+}
+.movedUp {
+    position: absolute;
+    width: 100%;
+    text-align: right;
+    top: 50px;
+    right: 50px;
+    transition-duration: 500ms;
 }
