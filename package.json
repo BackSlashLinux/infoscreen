@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/BackSlash-Linux/infoscreen/issues"
   },
-  "homepage": "https://github.com/BackSlash-Linux/infoscreen#readme"
+  "homepage": "https://github.com/BackSlash-Linux/infoscreen#readme",
+  "devDependencies": {
+    "electron": "^7.1.7"
+  }
 }
