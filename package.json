@@ -35,14 +35,10 @@
     "confinement": "devmode",
     "summary": "Info Center for BackSlash Linux",
     "grade": "stable",
-    "synopsis": "Info Center for BackSlash Linux",
     "icon": "build/icons/icon.png",
     "linux": {
         "target": "snap",
-        "category": "System",
-        "arch": [
-          "x64"
-        ]
+        "category": "System"
       }
     },
   "homepage": "https://www.backslashlinux.com",
