@@ -36,6 +36,7 @@
     "snap": {
       "confinement": "devmode",
       "grade": "stable",
+      "icon": "build/icons/icon.png",
       "summary": "Info Center for BackSlash Linux",
       "description": "Info Center for BackSlash Linux",
       "synopsis": "Info Center for BackSlash Linux",
