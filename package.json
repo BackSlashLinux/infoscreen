@@ -1,5 +1,6 @@
 {
   "name": "infoscreen",
+  "productName": "Info Screen",
   "version": "1.0.0",
   "description": "Info Center for BackSlash Linux",
   "main": "main.js",
@@ -27,7 +28,19 @@
   "bugs": {
     "url": "https://github.com/BackSlash-Linux/infoscreen/issues"
   },
-  "homepage": "https://github.com/BackSlash-Linux/infoscreen#readme",
+  "build": {
+    "appId": "com.backslashlinux.infoscreen",
+    "productName": "Info Screen",
+    "copyright": "Copyright © 2019 BackSlash Linux",
+    "confinement": "devmode",
+    "summary": "Info Center for BackSlash Linux",
+    "grade": "stable",
+    "synopsis": "Info Center for BackSlash Linux",
+    "description": "Info Center for BackSlash Linux",
+    "category": "System",
+    "asar": "true"
+  },
+  "homepage": "https://www.backslashlinux.com",
   "devDependencies": {
     "electron": "^7.1.7",
     "electron-builder": "^21.2.0"
