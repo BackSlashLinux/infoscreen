@@ -37,7 +37,7 @@
     "copyright": "Copyright © 2019 BackSlash Linux",
     "icon": "build/icons/icon.png",
     "snap": {
-      "confinement": "classic",
+      "confinement": "strict",
       "grade": "stable",
       "summary": "Info Center for BackSlash Linux",
       "description": "Info Center for BackSlash Linux",
