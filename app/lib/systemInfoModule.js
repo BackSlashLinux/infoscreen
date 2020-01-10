@@ -72,7 +72,7 @@ $(document).ready(function () {
 
     si.mem()
         .then((data) => {
-            $('#ramInformation').text((data.total) / (1024 * 1024 * 1024) + 'GB Total RAM')
+            $('#ramInformation').text(((data.total) / (1024 * 1024 * 1024)).toFixed(2) + ' GB Total RAM')
         })
 
     window.setInterval(() => {
