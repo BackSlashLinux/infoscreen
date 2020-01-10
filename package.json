@@ -39,7 +39,6 @@
       "summary": "Info Center for BackSlash Linux",
       "description": "Info Center for BackSlash Linux",
       "synopsis": "Info Center for BackSlash Linux",
-      "target": "snap",
       "category": "System",
       "arch": [
         "x64"
