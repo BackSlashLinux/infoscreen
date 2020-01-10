@@ -37,12 +37,12 @@
     "grade": "stable",
     "synopsis": "Info Center for BackSlash Linux",
     "description": "Info Center for BackSlash Linux",
-    "category": "System",
-    "asar": "true",
+    "icon": "build/icons/icon.png",
     "linux": {
       "target": [
         {
           "target": "snap",
+          "category": "System",
           "arch": [
             "x64"
           ]
