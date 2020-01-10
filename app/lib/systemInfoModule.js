@@ -117,6 +117,8 @@ $(document).ready(function () {
             title: 'BackSlash Linux Help'
         });
 
+        win.removeMenu()
+
         win.loadFile('app/noInternet.html')
     }
 
@@ -128,6 +130,8 @@ $(document).ready(function () {
             width: 360,
             title: 'BackSlash Linux Help'
         });
+
+        win.removeMenu()
 
         win.loadURL('https://docs.backslashlinux.com');
     }
