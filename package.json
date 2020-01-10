@@ -32,15 +32,20 @@
     "appId": "com.backslashlinux.infoscreen",
     "productName": "Info Screen",
     "copyright": "Copyright © 2019 BackSlash Linux",
-    "confinement": "devmode",
-    "summary": "Info Center for BackSlash Linux",
-    "grade": "stable",
     "icon": "build/icons/icon.png",
-    "linux": {
-        "target": "snap",
-        "category": "System"
-      }
-    },
+    "snap": {
+      "confinement": "devmode",
+      "grade": "stable",
+      "summary": "Info Center for BackSlash Linux",
+      "description": "Info Center for BackSlash Linux",
+      "synopsis": "Info Center for BackSlash Linux",
+      "target": "snap",
+      "category": "System",
+      "arch": [
+        "x64"
+      ]
+    }
+  },
   "homepage": "https://www.backslashlinux.com",
   "devDependencies": {
     "electron": "^7.1.7",
