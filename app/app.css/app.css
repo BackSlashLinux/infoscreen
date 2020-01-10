@@ -257,10 +257,10 @@ body {
     transition-duration: 500ms;
 }
 
-#changebg {
+#help {
     background-color: #333333;
     color: #ffffff;
-    padding: 5px 15px;
+    padding: 5px 10px;
     border-radius: 20px;
     position: absolute;
     top: 10px;
@@ -269,6 +269,7 @@ body {
     outline: none;
     font-size: 12px;
     font-weight: 300;
+    -webkit-app-region: no-drag;
 }
 
 #quit {
@@ -283,4 +284,5 @@ body {
     outline: none;
     font-size: 12px;
     font-weight: 300;
+    -webkit-app-region: no-drag;
 }

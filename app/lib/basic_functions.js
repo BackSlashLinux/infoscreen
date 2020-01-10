@@ -1,21 +1,21 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
     changeBackground()
 
-    $('#changebg').click(function() {
+    $('#changebg').click(function () {
         changeBackground()
     })
 
     function changeBackground() {
-        var min= 1
+        var min = 1
         var max = 19;
 
         var randomnumber = (Math.floor(Math.random() * (max - min + 1)) + min)
 
-        $('.fullbg').css('background-image', 'url("./assets/BG'+randomnumber+'.jpeg")')
+        $('.fullbg').css('background-image', 'url("./assets/BG' + randomnumber + '.jpeg")')
     }
 
-    $('#moveUp').click(function(){
+    $('#moveUp').click(function () {
         $('.staticInfoContainer').toggleClass('movedUp')
         $('.detailedViewContainer').slideToggle()
         if ($('#moveUp').text() == 'Show Detailed System Information') {
@@ -23,6 +23,13 @@ $(document).ready(function() {
         } else {
             $('#moveUp').text('Show Detailed System Information')
         }
+    })
+
+    $('#quit').click(function(e) {
+        var remote = require('electron').remote;
+        var bw = remote.BrowserWindow;
+        var window = bw.getFocusedWindow();
+        window.close();
     })
 
 })
