@@ -31,12 +31,14 @@
   "build": {
     "appId": "com.backslashlinux.infoscreen",
     "productName": "Info Screen",
+    "extraResources": [
+      "build/icons/*"
+    ],
     "copyright": "Copyright © 2019 BackSlash Linux",
     "icon": "build/icons/icon.png",
     "snap": {
       "confinement": "devmode",
       "grade": "stable",
-      "icon": "build/icons/icon.png",
       "summary": "Info Center for BackSlash Linux",
       "description": "Info Center for BackSlash Linux",
       "synopsis": "Info Center for BackSlash Linux",
