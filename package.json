@@ -38,7 +38,17 @@
     "synopsis": "Info Center for BackSlash Linux",
     "description": "Info Center for BackSlash Linux",
     "category": "System",
-    "asar": "true"
+    "asar": "true",
+    "linux": {
+      "target": [
+        {
+          "target": "snap",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    }
   },
   "homepage": "https://www.backslashlinux.com",
   "devDependencies": {
