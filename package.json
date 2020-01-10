@@ -39,10 +39,7 @@
       "summary": "Info Center for BackSlash Linux",
       "description": "Info Center for BackSlash Linux",
       "synopsis": "Info Center for BackSlash Linux",
-      "category": "System",
-      "arch": [
-        "x64"
-      ]
+      "category": "System"
     }
   },
   "homepage": "https://www.backslashlinux.com",
