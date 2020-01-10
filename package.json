@@ -36,7 +36,6 @@
     "summary": "Info Center for BackSlash Linux",
     "grade": "stable",
     "synopsis": "Info Center for BackSlash Linux",
-    "description": "Info Center for BackSlash Linux",
     "icon": "build/icons/icon.png",
     "linux": {
         "target": "snap",
