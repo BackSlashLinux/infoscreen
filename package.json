@@ -47,13 +47,13 @@
   },
   "homepage": "https://www.backslashlinux.com",
   "devDependencies": {
-    "electron": "^7.2.4",
-    "electron-builder": "^21.2.0"
+    "electron": "^9.2.1",
+    "electron-builder": "^22.8.0"
   },
   "dependencies": {
     "canvasjs": "^1.8.3",
-    "is-online": "^8.2.1",
-    "jquery": "^3.5.0",
-    "systeminformation": "^4.18.1"
+    "is-online": "^8.4.0",
+    "jquery": "^3.5.1",
+    "systeminformation": "^4.26.12"
   }
 }
