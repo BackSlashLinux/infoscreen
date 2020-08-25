@@ -7,8 +7,8 @@ create_desktop_entry() {
 	COMMENT="Displays System Information"
 
 	CURRENT_DIR=$(pwd)
-	EXECUTABLE=/usr/backslash/infoscreen/infoscreen
-	ICON_PATH=/usr/backslash/infoscreen/resources/build/icons/icon.png
+	EXECUTABLE=/usr/bin/infoscreen/infoscreen
+	ICON_PATH=/usr/bin/backslash/infoscreen/icons/icon.png
 
 	DESTINATION_DIR=/usr/share/applications
 	DESKTOP_FILE=$DESTINATION_DIR/infoscreen.desktop

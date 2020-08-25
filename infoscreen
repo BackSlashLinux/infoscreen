@@ -1,0 +1,3 @@
+#!/bin/sh
+
+exec electron /usr/bin/backslash/infoscreen/infoscreen.asar "$@"
