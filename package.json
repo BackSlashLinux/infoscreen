@@ -6,7 +6,7 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "dist": "electron-builder --linux snap"
+    "dist": "electron-builder --linux"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,10 @@
     "About",
     "information"
   ],
-  "author": "BackSlash Linux",
+  "author": {
+    "name": "BackSlash Linux",
+    "email": "support@backslashlinux.com"
+  },
   "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/BackSlash-Linux/infoscreen/issues"
@@ -40,6 +43,13 @@
       "confinement": "strict",
       "grade": "stable",
       "summary": "Info Center for BackSlash Linux",
+      "description": "Info Center for BackSlash Linux",
+      "synopsis": "Info Center for BackSlash Linux",
+      "category": "System"
+    },
+    "linux": {
+      "target": "tar.xz",
+      "icon": "build/icons/icon.png",
       "description": "Info Center for BackSlash Linux",
       "synopsis": "Info Center for BackSlash Linux",
       "category": "System"
