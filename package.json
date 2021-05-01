@@ -48,7 +48,7 @@
       "category": "System"
     },
     "linux": {
-      "target": "tar.xz",
+      "target": "snap",
       "icon": "build/icons/icon.png",
       "description": "Info Center for BackSlash Linux",
       "synopsis": "Info Center for BackSlash Linux",
