@@ -17,8 +17,8 @@ function searchProcesses(value) {
             "user"
         ]
     };
+    const fuse = new Fuse(currentProcesses, options);
     if (currentValue) {
-        const fuse = new Fuse(currentProcesses, options);
         showProcesses(fuse.search(currentValue));
     } else {
         showProcesses(currentProcesses);
@@ -28,12 +28,10 @@ function searchProcesses(value) {
 function getProcesses() {
     si.processes().then(processes => {
         currentProcesses = processes.list;
-        if (document.getElementById('filterSearch').value) {
-            searchProcesses(document.getElementById('filterSearch').value)
-        } else {
-            showProcesses(currentProcesses);
-        }
+        searchProcesses(document.getElementById('filterSearch').value)
     });
+
+    setTimeout(getProcesses, 3000);
 }
 
 function showProcesses(processeslist) {
@@ -55,7 +53,7 @@ function showProcesses(processeslist) {
         const runningSinceData = document.createElement('td');
         pidData.appendChild(document.createTextNode(currentItem.pid));
         processNameData.appendChild(document.createTextNode(currentItem.name));
-        cpuUsageData.appendChild(document.createTextNode(`${currentItem.cpu} %`));
+        cpuUsageData.appendChild(document.createTextNode(`${currentItem.cpuu} %`));
         memoryUsageData.appendChild(document.createTextNode(`${currentItem.mem} %`));
         stateData.appendChild(document.createTextNode(currentItem.state));
         userData.appendChild(document.createTextNode(currentItem.user));
@@ -71,6 +69,5 @@ function showProcesses(processeslist) {
     });
 }
 
-setInterval(() => {
-    getProcesses();
-}, 1000)
+getProcesses();
+
