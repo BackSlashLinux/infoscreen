@@ -41,6 +41,7 @@ function createWindow() {
 
       Menu.setApplicationMenu(null);
 
+      win.removeMenu();
       // Open the DevTools.
       // win.webContents.openDevTools()
       win.on("closed", () => {
