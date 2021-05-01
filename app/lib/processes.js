@@ -53,8 +53,8 @@ function showProcesses(processeslist) {
         const runningSinceData = document.createElement('td');
         pidData.appendChild(document.createTextNode(currentItem.pid));
         processNameData.appendChild(document.createTextNode(currentItem.name));
-        cpuUsageData.appendChild(document.createTextNode(`${currentItem.cpuu} %`));
-        memoryUsageData.appendChild(document.createTextNode(`${currentItem.mem} %`));
+        cpuUsageData.appendChild(document.createTextNode(`${currentItem.cpuu.toFixed(2)} %`));
+        memoryUsageData.appendChild(document.createTextNode(`${currentItem.mem.toFixed(2)} %`));
         stateData.appendChild(document.createTextNode(currentItem.state));
         userData.appendChild(document.createTextNode(currentItem.user));
         runningSinceData.appendChild(document.createTextNode(currentItem.started));
