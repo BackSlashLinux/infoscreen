@@ -102,78 +102,7 @@ function showProcessesWindow() {
         icon: path.join(__dirname, "../icon.png")
     });
 
-    win.removeMenu()
+    win.removeMenu();
 
     win.loadFile('app/processes.html')
 }
-
-
-// $(document).ready(function () {
-
-//     // CPU Graph Plotting Algorithm
-
-
-//     // CPU Information Algorithm
-
-//     si.cpu()
-//         .then((data) => {
-//             $('#cpuInformation').text(data.manufacturer + ' ' + data.brand + ' ' + data.speed + 'GHz')
-//             // console.log(data)
-//         })
-
-
-//     // Add RAM Total
-
-//     si.mem()
-//         .then((data) => {
-//             $('#ramInformation').text(((data.total) / (1024 * 1024 * 1024)).toFixed(2) + ' GB Total RAM')
-//         })
-
-//     window.setInterval(() => {
-//         si.mem()
-//             .then((data) => {
-//                 $('#ramLoadValue').text(((data.free) / (1024 * 1024 * 1024)).toFixed(2) + ' GB Free')
-//                 var used = ((data.total - data.free) / data.total) * 100
-//                 $('#ram').css('width', used + '%')
-//             })
-//     }, 500)
-
-//     si.graphics()
-//         .then((data) => {
-//             $('#graphicsData').text(`${data.controllers[0].vram} MB ${data.controllers[0].model}`)
-//             console.log(data)
-//         })
-
-
-//     const button = document.getElementById('help');
-//     button.addEventListener('click', () => {
-//         checkForInternet()
-//     });
-
-//     function checkForInternet() {
-
-//         (async () => {
-//             if (await isOnline()) {
-//                 openDocs()
-//             } else {
-//                 noInternet()
-//             }
-//         })();
-
-//     }
-
-//     function openDocs() {
-//         const remote = require('electron').remote;
-//         const BrowserWindow = remote.BrowserWindow;
-//         const win = new BrowserWindow({
-//             height: 640,
-//             width: 360,
-//             title: 'BackSlash Linux Help'
-//         });
-
-//         win.removeMenu()
-
-//         win.loadURL('https://docs.backslashlinux.com');
-//     }
-
-// })
