@@ -94,7 +94,11 @@ function showProcessesWindow() {
         width: 800,
         height: 600,
         title: 'All Processes',
-        resizable: false,
+        webPreferences: {
+            nodeIntegration: true,
+            contextIsolation: false,
+            enableRemoteModule: true,
+        },
         icon: path.join(__dirname, "../icon.png")
     });
 
