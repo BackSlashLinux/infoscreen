@@ -57,7 +57,7 @@
   },
   "homepage": "https://www.backslashlinux.com",
   "devDependencies": {
-    "electron": "^9.2.1",
+    "electron": "^9.4.0",
     "electron-builder": "^22.8.0"
   },
   "dependencies": {
