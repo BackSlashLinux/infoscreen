@@ -4,6 +4,8 @@ const { dialog } = require("electron");
 const fs = require("fs");
 let win = null;
 
+require('@electron/remote/main').initialize()
+
 function createWindow() {
   fs.access("/etc/backslashlinux/version.conf", fs.constants.F_OK, (err) => {
     if (err) {
@@ -32,7 +34,6 @@ function createWindow() {
           contextIsolation: false,
           enableRemoteModule: true,
         },
-        frame: false,
         icon: path.join(__dirname, "icon.png"),
         resizable: false,
       });

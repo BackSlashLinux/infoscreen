@@ -2,42 +2,41 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Info Center</title>
-    <link rel="stylesheet" href="app.css/app.css">
+    <link rel="stylesheet" href="app.css/app.css" />
 </head>
 
 <body>
     <div class="fullbg">
-        <button id="help">?</button>
-        <button id="quit">Close</button>
-        <div class="staticInfoContainer">
-            <h1>BackSlash Linux <span>Sven</span></h1>
-            <h3>Version 5.1.0</h3>
-            <button id="moveUp">Show Detailed System Information</button>
-        </div>
-        <div class="detailedViewContainer">
-            <p class="static"><strong>Desktop: </strong>BackSlash Shell v3.0 on KDE Plasma</p>
-            <p class="gData"><strong>Graphics: </strong><span id="graphicsData"></span></p>
-            <p id="ramInformation"></p>
-            <p id="ramLoadValue"></p>
-            <div class="meter">
-                <span id="ram" style="width: 0%"></span>
+        <div class="overlay">
+            <div class="staticInfoContainer">
+                <h1>BackSlash Linux <span id="distname"></span><span id="vm">VM</span></h1>
+                <h3 style="margin-bottom: 30px;">Version <span id="version"></span></h3>
+                <p id="model" class="strong"></p>
+                <p><span class="strong">Processor</span>&emsp;<span id="processor"></span></p>
+                <p><span class="strong">Memory</span>&emsp;<span id="memory"></span></p>
+                <p><span class="strong">Graphics</span>&emsp;<span id="graphics"></span></p>
+                <p><span class="strong">Serial Number</span>&emsp;<span id="serial"></span></p>
+                <p id="cpuLoadValue"></p>
+                <div class="detailedViewContainer">
+                    <p id="cpuLoadValue"></p>
+                    <div id="cpuLoadContainer"></div>
+                </div>
             </div>
-            <p id="cpuInformation"></p>
-            <p id="cpuLoadValue"></p>
-            <div id="cpuLoadContainer"></div>
         </div>
+        <button id="runningProcesses" class="btn" onclick="showProcessesWindow()">Show All Processes</button>
         <div class="copyrightContainer">
-            <p>&copy; 2016-2020, BackSlash Linux. Distributed as Free and Open Source Software.</p>
+            <p>&copy; 2016-2021, BackSlash Linux. Distributed as Free and Open Source Software.</p>
         </div>
     </div>
-    <script>window.$ = window.jQuery = require('jquery');</script>
-    <script src="lib/basic_functions.js"></script>
-    <script src="lib/systemInfoModule.js"></script>
     <script src="../node_modules/canvasjs/dist/canvasjs.3.js"></script>
+    <script src="lib/systemInfoModule.js"></script>
+    <!-- <script src="lib/basic_functions.js"></script>
+    
+     -->
 </body>
 
 </html>

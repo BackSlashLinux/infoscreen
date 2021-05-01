@@ -61,6 +61,8 @@
     "electron-builder": "^22.10.5"
   },
   "dependencies": {
+    "@electron/remote": "^1.1.0",
+    "apple-model-names": "^1.1.12",
     "canvasjs": "^1.8.3",
     "is-online": "^8.4.0",
     "jquery": "^3.5.1",
